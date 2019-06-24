@@ -57,6 +57,7 @@ $primary-color: #3333ff;
 }
 
 .header__content-item {
+    color: black;
     margin-left: 30px;
     text-decoration: none;
 }
@@ -69,6 +70,7 @@ $primary-color: #3333ff;
 }
 
 .block1 {
+    flex-direction: column;
     height: 90vh;
     color: white;
 }
@@ -77,10 +79,75 @@ $primary-color: #3333ff;
     position: absolute;
     height: 95vh;
     width: 105vw;
-    top: +10vh;
+    top: +9vh;
+    left: -5vw;
     z-index: -1000;
-    background-image: url("../../img/clinic.jpg");
+    background: lightgray url("../../img/clinic.jpg");
+    background-blend-mode: multiply;
     background-size: cover;
     background-position-y: -200px;
     @include blur(5px);
+}
+
+.block1__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block1__text {
+    width: 600px;
+}
+
+.block1__h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    color: $primary-color;
+    font-size: 34pt;
+}
+
+.block1__h3 {
+    margin-top: 30px;
+    font-size: 20pt;
+    line-height: 1.3;
+}
+
+.block1__btns {
+    margin-top: 40px;
+    padding: 10px 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.block1__btns-tel {
+    border: none;
+    background-color: white;
+    color: black;
+    width: 290px;
+    padding: 12px;
+    border-radius: 90px;
+    font-size: 14pt;
+    text-align: center;
+}
+
+.block1__btns-action-btn {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    width: 290px;
+    padding: 12px;
+    border-radius: 90px;
+    text-align: center;
+    font-size: 14pt;
+}
+
+.block1__btns-action-btn:hover {
+    box-shadow: 0 0 10px $primary-color;
+}
+
+.block1__img {
+    // position: absolute;
+    // right: 180px;
+
 }
