@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap&subset=cyrillic");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  overflow-x: hidden;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  align-self: center;
+}
+
+.header {
+  height: 10vh;
+  background: white;
+  font-size: 10pt;
+}
+
+.header__content {
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center;
+  color: #3333ff;
+}
+
+.header__content-logo {
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+.header__content-item {
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.header__content-item_btn {
+  color: white;
+  background: #3333ff;
+  border-radius: 90px;
+  padding: 12px;
+}
+
+.block1 {
+  height: 90vh;
+  color: white;
+}
+
+.block1__bg {
+  position: absolute;
+  height: 95vh;
+  width: 105vw;
+  top: 10vh;
+  z-index: -1000;
+  background-image: url("../../img/clinic.jpg");
+  background-size: cover;
+  background-position-y: -200px;
+  filter: blur(5px);
+  -ms-filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+
+/*# sourceMappingURL=stylesheet.css.map */

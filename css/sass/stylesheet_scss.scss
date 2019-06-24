@@ -1,0 +1,86 @@
+// Подключение шрифтов
+@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap&subset=cyrillic");
+
+// Миксин для корректной активации флексбоксов в разных браузерах
+@mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+$primary-color: #3333ff;
+
+@mixin blur($blur-size) {
+    filter: blur($blur-size);
+    -ms-filter: blur($blur-size);
+    -webkit-filter: blur($blur-size);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    overflow-x: hidden;
+}
+
+.flex {
+    @include flexbox();
+    justify-content: center;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    align-self: center;
+}
+
+.header {
+    height: 10vh;
+    background: white;
+    font-size: 10pt;
+}
+
+.header__content {
+    flex-flow: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: $primary-color;
+}
+
+.header__content-logo {
+    align-self: flex-start;
+    margin-right: auto;
+}
+
+.header__content-item {
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.header__content-item_btn {
+    color: white;
+    background: $primary-color;
+    border-radius: 90px;
+    padding: 12px;
+}
+
+.block1 {
+    height: 90vh;
+    color: white;
+}
+
+.block1__bg {
+    position: absolute;
+    height: 95vh;
+    width: 105vw;
+    top: +10vh;
+    z-index: -1000;
+    background-image: url("../../img/clinic.jpg");
+    background-size: cover;
+    background-position-y: -200px;
+    @include blur(5px);
+}
