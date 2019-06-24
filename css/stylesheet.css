@@ -1,11 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik&display=swap&subset=cyrillic");
 @import url("https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap&subset=cyrillic");
 * {
+  font-family: "Rubik", sans-serif;
+}
+
+.block-header, .block1__h1 {
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
   overflow-x: hidden;
+  transition: all 0.5s;
 }
 
 .flex {
@@ -17,10 +25,15 @@
   justify-content: center;
 }
 
+.display-height {
+  height: 100vh;
+}
+
 .container {
   width: 1200px;
   padding: 0 15px;
-  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header {
@@ -37,7 +50,6 @@
 }
 
 .header__content-logo {
-  align-self: flex-start;
   margin-right: auto;
 }
 
@@ -62,7 +74,7 @@
 
 .block1__bg {
   position: absolute;
-  height: 95vh;
+  height: 100vh;
   width: 105vw;
   top: 9vh;
   left: -5vw;
@@ -88,7 +100,6 @@
 }
 
 .block1__h1 {
-  font-family: "Rubik Mono One", sans-serif;
   color: #3333ff;
   font-size: 34pt;
 }
@@ -131,6 +142,76 @@
 
 .block1__btns-action-btn:hover {
   box-shadow: 0 0 10px #3333ff;
+}
+
+.block-header {
+  font-size: 30pt;
+  color: #3333ff;
+  text-align: center;
+}
+
+.block2 {
+  border-radius: 200px;
+  background: white;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+
+.block2__content {
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.block2__content-text {
+  flex-flow: column;
+  width: 600px;
+  font-size: 16pt;
+}
+
+.block2__content-text-data {
+  flex-flow: row;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.block2__content-text-data_big {
+  font-size: 28pt;
+  color: #3333ff;
+}
+
+.block2__content-pic {
+  box-shadow: 0 0 5px darkgray;
+}
+
+.block3 {
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+
+.block3__content {
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.block3__content-text {
+  flex-flow: column;
+  width: 600px;
+  font-size: 16pt;
+}
+
+.block3__content-text-data {
+  flex-flow: row;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.block3__content-text-data_big {
+  font-size: 28pt;
+  color: #3333ff;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
