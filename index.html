@@ -7,21 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
     <title>Частная клиника</title>
+    <script src="https://kit.fontawesome.com/b0933c3427.js"></script>
 </head>
 
 <body>
     <header class="header flex">
         <div class="header__content container flex">
             <img class="header__content-logo" src="img/logo.png" alt="logo">
-            <a class="header__content-item" href="">Справки</a>
-            <a class="header__content-item" href="">Медицинские книжки</a>
-            <a class="header__content-item" href="">Стоимость услуг</a>
-            <a class="header__content-item" href="">Лицензии</a>
-            <a class="header__content-item" href="">Контакты</a>
+            <a class="header__content-item" href="#block2">Справки</a>
+            <a class="header__content-item" href="#block3">Медицинские книжки</a>
+            <a class="header__content-item" href="#block4">Стоимость услуг</a>
+            <a class="header__content-item" href="#block5">Лицензии</a>
+            <a class="header__content-item" href="#block6">Контакты</a>
             <a class="header__content-item header__content-item_btn" href="">Обратный звонок</a>
         </div>
     </header>
-    <div class="block1 flex">
+    <div id="block1" class="block1 flex">
         <div class="block1__bg"></div>
         <div class="block1__inner container">
             <div class="block1__text">
@@ -30,8 +31,7 @@
                     Выдача медицинских справок, оформление медицинской книжки, амбулаторный приём врачей
                 </h3>
                 <form class="block1__btns">
-                    <input class="block1__btns-tel" type="tel" class="block1__btns-input-tel" pattern="+7 [0-9]{10}"
-                        placeholder="+7 (___) ___ __ __">
+                    <input class="block1__btns-tel" type="tel" pattern="+7 [0-9]{10}" placeholder="+7 (___) ___ __ __">
                     <button class="block1__btns-action-btn">Записаться</button>
                 </form>
             </div>
@@ -40,7 +40,7 @@
             </div>
         </div>
     </div>
-    <div class="block2 container display-height flex">
+    <div id="block2" class="block2 container display-height flex">
         <h2 class="block2__header block-header">Медицинские справки</h2>
         <div class="block2__content flex">
             <div class="block2__content-text">
@@ -60,7 +60,7 @@
             </div>
         </div>
     </div>
-    <div class="block3 container display-height flex">
+    <div id="block3" class="block3 container display-height flex">
         <h2 class="block3__header block-header">Медицинские книжки</h2>
         <div class="block3__content flex">
             <div class="block3__content-pic">
@@ -80,7 +80,7 @@
             </div>
         </div>
     </div>
-    <div class="block4 container display-height flex">
+    <div id="block4" class="block4 container display-height flex">
         <h2 class="block4__header block-header">Стоимость услуг</h2>
         <div class="block4__list">
             <div class="block4__list-section-header">Справки</div>
@@ -125,7 +125,7 @@
         </div>
         <a href="#" class="block4__link">Полный прайс-лист</a>
     </div>
-    <div class="block5 container display-height flex">
+    <div id="block5" class="block5 container display-height flex">
         <div class="block5__header block-header">Допуски и лицензии</div>
         <div class="block5__img-holder flex">
             <div class="block5__img-holder-item">
@@ -142,6 +142,47 @@
             </div>
         </div>
     </div>
+    <div id="block6" class="block6 container flex">
+        <div class="block6__info flex">
+            <div class="block6__info-header">Контактная информация</div>
+            <div class="block6__info-item">
+                <i class="block6__info-item-icon fas fa-map-marker-alt"></i>
+                <p>г.Хабаровск, ул.Серышева 47</p>
+            </div>
+            <div class="block6__info-item">
+                <i class="block6__info-item-icon fas fa-calendar-alt"></i>
+                <p>Ежедневно</p>
+            </div>
+            <div class="block6__info-item">
+                <i class="block6__info-item-icon fas fa-envelope"></i>
+                <p>privateclinic@gmail.com</p>
+            </div>
+            <div class="block6__info-item">
+                <i class="block6__info-item-icon fas fa-phone-alt"></i>
+                <p>+7 999 999 99 99</p>
+            </div>
+        </div>
+        <div class="block6__form flex">
+            <div class="block6__form-header">Закажите бесплатную консультацию</div>
+            <form class="block6__form-container">
+                <div>
+                    <input class="block6__form-name" type="text" placeholder="Имя">
+                    <input class="block6__form-tel" type="tel" pattern="+7 [0-9]{10}" placeholder="+7 (___) ___ __ __">
+                </div>
+                <input class="block6__form-ask" type="text" placeholder="Опишите ваш вопрос">
+                <button class="block6__form-btn">Заказать звонок</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__content container flex">
+            <a class="footer__content-item" href="#block2">Справки</a>
+            <a class="footer__content-item" href="#block3">Медицинские книжки</a>
+            <a class="footer__content-item" href="#block4">Стоимость услуг</a>
+            <a class="footer__content-item" href="#block5">Лицензии</a>
+            <a class="footer__content-item" href="#block6">Контакты</a>
+        </div>
+    </footer>
 </body>
 
 </html>
